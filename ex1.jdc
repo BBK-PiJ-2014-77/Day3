@@ -1,0 +1,28 @@
+// accept to numbers as doubles
+// print a list of options 1-4 
+double n1 = 0.0, n2 = 0.0, answer = 0.0;
+String Number1 = "", Number2 = "", operator = "";
+println ("first number");
+Number1 =  System.console().readLine(); 
+n1 = Double.parseDouble(Number1);
+println ("second number");
+Number2 =  System.console().readLine(); 
+n2 = Double.parseDouble(Number2);
+println ("What operation? +,-,/,*");
+operator = System.console().readLine(); 
+
+		if (operator.equals("+")) {
+			answer = n1 + n2;
+		}
+		else if (operator.equals("-")) {
+			answer = n1 - n2;
+		}
+		else if (operator.equals("/")) {
+			answer = n1 / n2;
+		}
+		else if (operator.equals("*")) { 
+			answer = n1 * n2;
+		}
+
+			
+println (answer);
